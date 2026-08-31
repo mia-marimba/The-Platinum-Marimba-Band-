@@ -1,0 +1,1859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Platinum Marimba Band ♡</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
+
+:root {
+    --pink: #d9799b;
+    --pink-light: #f7dce5;
+    --pink-pale: #fff7fa;
+    --rose: #b65376;
+    --burgundy: #5b3040;
+    --cream: #fffdfb;
+    --text: #30252a;
+    --muted: #75666c;
+    --white: #ffffff;
+    --line: #ead3db;
+    --shadow: 0 20px 60px rgba(91, 48, 64, 0.10);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', Arial, sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* ==============================
+   NAVIGATION
+============================== */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 7%;
+
+    background: rgba(255,253,251,0.95);
+    backdrop-filter: blur(16px);
+
+    border-bottom: 1px solid var(--line);
+}
+
+.logo {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: var(--burgundy);
+}
+
+.logo::after {
+    content: " ♡";
+    color: var(--pink);
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--muted);
+    transition: 0.25s ease;
+}
+
+.nav-links a:hover {
+    color: var(--pink);
+}
+
+
+/* ==============================
+   HERO
+============================== */
+
+.hero {
+    min-height: 92vh;
+    padding: 90px 8%;
+
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    gap: 80px;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at 5% 20%,
+        rgba(247,220,229,0.9),
+        transparent 28%),
+        radial-gradient(circle at 95% 85%,
+        rgba(217,121,155,0.12),
+        transparent 28%),
+        var(--cream);
+
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "✦";
+    position: absolute;
+    top: 100px;
+    right: 8%;
+    color: var(--pink);
+    font-size: 20px;
+}
+
+.hero::after {
+    content: "♡";
+    position: absolute;
+    bottom: 80px;
+    left: 5%;
+    color: var(--pink-light);
+    font-size: 80px;
+}
+
+.small-title {
+    color: var(--rose);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(55px, 7vw, 92px);
+    line-height: 0.98;
+    letter-spacing: -3px;
+    font-weight: 500;
+}
+
+.hero h1 span {
+    color: var(--pink);
+    font-style: italic;
+}
+
+.hero p {
+    max-width: 560px;
+    margin-top: 24px;
+    font-size: 16px;
+    color: var(--muted);
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 13px 25px;
+
+    background: var(--burgundy);
+    color: white;
+
+    border-radius: 50px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: all .25s ease;
+
+    box-shadow: 0 10px 25px rgba(91,48,64,.15);
+}
+
+.button:hover {
+    background: var(--pink);
+    transform: translateY(-3px);
+}
+
+
+/* ==============================
+   HERO IMAGE
+============================== */
+
+.hero-photo {
+    position: relative;
+    transform: rotate(1.5deg);
+}
+
+.hero-photo img {
+    height: 610px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.sticker {
+    position: absolute;
+
+    bottom: 30px;
+    left: -35px;
+
+    width: 105px;
+    height: 105px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    border-radius: 50%;
+
+    background: var(--pink);
+    color: white;
+
+    font-family: 'Playfair Display', Georgia, serif;
+
+    font-size: 14px;
+    line-height: 1.3;
+
+    transform: rotate(-9deg);
+
+    box-shadow: 0 12px 30px rgba(91,48,64,.16);
+}
+
+
+/* ==============================
+   SECTIONS
+============================== */
+
+section {
+    padding: 115px 8%;
+}
+
+.section-title {
+    max-width: 720px;
+    text-align: center;
+    margin: 0 auto 65px;
+}
+
+.section-title small {
+    color: var(--rose);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.section-title h2 {
+    margin-top: 12px;
+
+    font-family: 'Playfair Display', Georgia, serif;
+
+    font-size: clamp(42px, 5vw, 62px);
+
+    line-height: 1.05;
+    font-weight: 500;
+}
+
+.section-title h2 span {
+    color: var(--pink);
+    font-style: italic;
+}
+
+.section-title p {
+    color: var(--muted);
+    max-width: 620px;
+    margin: 18px auto 0;
+    font-size: 15px;
+}
+
+
+/* ==============================
+   ABOUT
+============================== */
+
+.about {
+    background: white;
+}
+
+.about-intro {
+    max-width: 850px;
+    margin: -20px auto 70px;
+    text-align: center;
+}
+
+.about-intro p {
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.about-intro strong {
+    color: var(--burgundy);
+}
+
+.about-cards {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.about-card {
+    background: var(--pink-pale);
+    border: 1px solid var(--line);
+
+    padding: 38px;
+    border-radius: 10px;
+
+    min-height: 280px;
+
+    transition: .3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow);
+}
+
+.about-card:nth-child(2) {
+    background: var(--pink-light);
+    border-color: transparent;
+    transform: translateY(-14px);
+}
+
+.about-card .number {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 42px;
+    color: var(--pink);
+}
+
+.about-card h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 25px;
+    margin: 12px 0;
+}
+
+.about-card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+
+/* ==============================
+   VIDEO SECTIONS
+============================== */
+
+.video-section {
+    background: var(--burgundy);
+    color: white;
+
+    display: grid;
+    grid-template-columns: .75fr 1.25fr;
+
+    gap: 70px;
+    align-items: center;
+}
+
+.video-section h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+
+    font-size: clamp(45px, 5vw, 65px);
+
+    line-height: 1.05;
+    font-weight: 500;
+}
+
+.video-section h2 span {
+    color: #f0a9bf;
+    font-style: italic;
+}
+
+.video-section p {
+    color: #dfcbd2;
+    margin-top: 18px;
+    font-size: 15px;
+}
+
+.video-box {
+    background: #171114;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 25px 70px rgba(0,0,0,.25);
+}
+
+.video-box video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    background: #171114;
+}
+
+
+/* ==============================
+   KONSERVE VIDEO — NO BORDER
+============================== */
+
+.konserve-video-box {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    overflow: visible;
+    box-shadow: none;
+}
+
+.konserve-video-box video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+
+    background: transparent;
+
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* ==============================
+   ACHIEVEMENTS
+============================== */
+
+.achievements {
+    background: var(--pink-pale);
+}
+
+.achievement {
+    max-width: 1150px;
+    margin: 0 auto 115px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 75px;
+    align-items: center;
+}
+
+.achievement:nth-child(even) .achievement-photo {
+    order: 2;
+}
+
+.achievement-photo {
+    position: relative;
+}
+
+.achievement-photo img {
+    width: 100%;
+    height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.year {
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    background: white;
+
+    color: var(--burgundy);
+
+    padding: 7px 15px;
+
+    border-radius: 50px;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.achievement h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+
+    font-size: clamp(35px, 4vw, 52px);
+
+    line-height: 1.05;
+
+    font-weight: 500;
+
+    margin: 12px 0 20px;
+}
+
+.achievement h3 span {
+    color: var(--pink);
+    font-style: italic;
+}
+
+.achievement p {
+    color: var(--muted);
+    font-size: 15px;
+    max-width: 500px;
+}
+
+.badge {
+    display: inline-block;
+
+    margin-top: 22px;
+
+    padding: 8px 15px;
+
+    border: 1px solid #e5bdca;
+
+    border-radius: 50px;
+
+    color: var(--rose);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    background: white;
+}
+
+
+/* ==============================
+   PLATINUMS
+============================== */
+
+.platinums {
+    background: white;
+}
+
+.members {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 24px;
+}
+
+.member {
+    background: var(--pink-pale);
+
+    border: 1px solid var(--line);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    transition: .3s ease;
+}
+
+.member:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow);
+}
+
+.member img {
+    width: 100%;
+    height: 410px;
+    object-fit: cover;
+}
+
+.member-info {
+    padding: 26px;
+}
+
+.member-number {
+    color: var(--pink);
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+}
+
+.member h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+
+    font-size: 23px;
+
+    margin-top: 6px;
+}
+
+.member p {
+    color: var(--muted);
+
+    font-size: 13px;
+
+    margin-top: 12px;
+}
+
+
+/* ==============================
+   TEACHER
+============================== */
+
+.teacher {
+    background: var(--pink-light);
+
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.teacher img {
+    width: 100%;
+
+    max-height: 570px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    box-shadow: var(--shadow);
+}
+
+.teacher h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+
+    font-size: clamp(45px, 5vw, 65px);
+
+    line-height: 1.05;
+
+    font-weight: 500;
+}
+
+.teacher h2 span {
+    color: var(--pink);
+
+    font-style: italic;
+}
+
+.teacher h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+
+    font-size: 27px;
+
+    margin: 25px 0 12px;
+}
+
+.teacher p {
+    max-width: 600px;
+
+    color: var(--muted);
+
+    font-size: 15px;
+
+    margin-bottom: 15px;
+}
+
+.teacher-bio {
+    margin-top: 28px;
+
+    padding: 20px 22px;
+
+    border-left: 3px solid var(--pink);
+
+    background: rgba(255,255,255,.45);
+
+    border-radius: 0 8px 8px 0;
+}
+
+
+/* ==============================
+   GALLERY
+============================== */
+
+.gallery {
+    background: var(--cream);
+}
+
+.photo-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+
+    gap: 15px;
+}
+
+.photo-grid img {
+    width: 100%;
+
+    height: 290px;
+
+    object-fit: cover;
+
+    border-radius: 7px;
+
+    transition: .3s ease;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.015);
+}
+
+.photo-grid img:nth-child(1) {
+    grid-column: span 7;
+}
+
+.photo-grid img:nth-child(2) {
+    grid-column: span 5;
+}
+
+.photo-grid img:nth-child(3),
+.photo-grid img:nth-child(4),
+.photo-grid img:nth-child(5),
+.photo-grid img:nth-child(6),
+.photo-grid img:nth-child(7) {
+    grid-column: span 4;
+}
+
+
+/* ==============================
+   CONTACT
+============================== */
+
+.contact {
+    background: var(--pink);
+
+    color: white;
+
+    text-align: center;
+}
+
+.contact h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+
+    font-size: clamp(45px, 6vw, 70px);
+
+    line-height: 1.05;
+
+    font-weight: 500;
+}
+
+.contact h2 span {
+    font-style: italic;
+}
+
+.contact p {
+    max-width: 650px;
+
+    margin: 22px auto;
+
+    color: #fff0f5;
+
+    font-size: 15px;
+}
+
+.contact .button {
+    background: white;
+    color: var(--burgundy);
+}
+
+.contact .button:hover {
+    background: var(--burgundy);
+    color: white;
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    background: #34262c;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+footer strong {
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+footer span {
+    color: #ef9fba;
+}
+
+footer p {
+    color: #c8b7be;
+
+    font-size: 12px;
+
+    margin-top: 8px;
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero,
+    .video-section,
+    .teacher,
+    .achievement {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 75px;
+    }
+
+    .hero-photo {
+        margin-top: 20px;
+    }
+
+    .about-cards,
+    .members {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .achievement:nth-child(even) .achievement-photo {
+        order: initial;
+    }
+
+    .teacher {
+        gap: 45px;
+    }
+
+    .photo-grid {
+        display: block;
+    }
+
+    .photo-grid img {
+        margin-bottom: 15px;
+        height: 350px;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    section {
+        padding: 75px 6%;
+    }
+
+    .hero {
+        padding: 70px 6%;
+    }
+
+    .hero h1 {
+        font-size: 54px;
+    }
+
+    .hero-photo img {
+        height: 450px;
+    }
+
+    .about-cards,
+    .members {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card:nth-child(2) {
+        transform: none;
+    }
+
+    .achievement h3 {
+        font-size: 38px;
+    }
+
+    .achievement-photo img {
+        height: 350px;
+    }
+
+    .member img {
+        height: 450px;
+    }
+
+    .teacher h2 {
+        font-size: 45px;
+    }
+
+    .sticker {
+        left: -10px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     NAVIGATION
+========================================= -->
+
+<nav>
+
+    <div class="logo">
+        THE PLATINUMS
+    </div>
+
+    <div class="nav-links">
+
+        <a href="#about">About</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#platinums">The Platinums</a>
+        <a href="#teacher">Teacher</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section class="hero">
+
+    <div>
+
+        <div class="small-title">
+            CURRO SOMERSET WEST • SITARI ESTATE
+        </div>
+
+        <h1>
+            The Platinum<br>
+            <span>Marimba Band</span>
+        </h1>
+
+        <p>
+            Five friends. Five sets of mallets.
+            One very big love for music.
+        </p>
+
+        <p>
+            We are five 15-year-old learners from Curro
+            Somerset West who found something pretty special
+            in making music together.
+        </p>
+
+        <a href="#about" class="button">
+            Come meet us ♡
+        </a>
+
+    </div>
+
+
+    <div class="hero-photo">
+
+        <img
+            src="images/tygerberg.jpeg"
+            alt="The Platinum Marimba Band"
+        >
+
+        <div class="sticker">
+            made with<br>
+            music ♡
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     ABOUT US
+========================================= -->
+
+<section class="about" id="about">
+
+    <div class="section-title">
+
+        <small>WHO WE ARE ✦</small>
+
+        <h2>
+            Five people.<br>
+            <span>One sound.</span>
+        </h2>
+
+    </div>
+
+
+    <div class="about-intro">
+
+        <p>
+            <strong>The Platinum Marimba Band</strong> is a group
+            of five 15-year-old Curro Somerset West learners who
+            share a love for music, performance and, obviously,
+            marimbas.
+        </p>
+
+        <p>
+            Over time, playing together has become about much more
+            than getting the notes right. It has given us a place
+            to laugh, create, challenge ourselves and make memories
+            together. Every rehearsal, competition and performance
+            has brought us closer as a band.
+        </p>
+
+        <p>
+            Our goal is to <strong>broaden our reach</strong> and
+            share our love for music with more people. We want to
+            perform at new venues, connect with our community and
+            inspire other young musicians to discover just how much
+            joy music can bring.
+        </p>
+
+    </div>
+
+
+    <div class="about-cards">
+
+        <div class="about-card">
+
+            <div class="number">05</div>
+
+            <h3>Platinums</h3>
+
+            <p>
+                Five 15-year-old learners, five personalities
+                and one ensemble. We have grown together through
+                rehearsals, competitions, performances and plenty
+                of mallet practice.
+            </p>
+
+        </div>
+
+
+        <div class="about-card">
+
+            <div class="number">♪</div>
+
+            <h3>Why we play</h3>
+
+            <p>
+                Music is where our creativity, friendship and
+                personalities come together. We love the energy
+                of performing and seeing people enjoy the music
+                we create.
+            </p>
+
+        </div>
+
+
+        <div class="about-card">
+
+            <div class="number">∞</div>
+
+            <h3>What's next?</h3>
+
+            <p>
+                We want to broaden our reach, perform in new
+                spaces and share our love for marimba music
+                with as many people as possible.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     PERFORMANCE VIDEO
+========================================= -->
+
+<section class="video-section">
+
+    <div>
+
+        <div class="small-title">
+            TURN THE VOLUME UP ♡
+        </div>
+
+        <h2>
+            Watch us<br>
+            <span>play.</span>
+        </h2>
+
+        <p>
+            Here's a little taste of what happens
+            when the mallets come out.
+        </p>
+
+    </div>
+
+
+    <div class="video-box">
+
+        <video
+            controls
+            playsinline
+            preload="metadata"
+        >
+
+            <source
+                src="images/performance.mp4"
+                type="video/mp4"
+            >
+
+            Your browser does not support HTML5 video.
+
+        </video>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     ACHIEVEMENTS
+========================================= -->
+
+<section class="achievements" id="achievements">
+
+    <div class="section-title">
+
+        <small>THE RECEIPTS ✧</small>
+
+        <h2>
+            Our <span>achievements.</span>
+        </h2>
+
+        <p>
+            A few of the moments we're most proud of.
+        </p>
+
+    </div>
+
+
+
+    <!-- HELDERBERG 2026 -->
+
+    <div class="achievement">
+
+        <div class="achievement-photo">
+
+            <img
+                src="images/helderberg-2026.jpg"
+                alt="The Platinum Marimba Band at Helderberg Eisteddfod 2026"
+            >
+
+            <div class="year">
+                2026
+            </div>
+
+        </div>
+
+        <div>
+
+            <div class="small-title">
+                HELDERBERG EISTEDDFOD
+            </div>
+
+            <h3>
+                <span>Gold Plus</span>
+            </h3>
+
+            <p>
+                In 2026, The Platinum Marimba Band received
+                a Gold Plus award at the Helderberg Eisteddfod.
+            </p>
+
+            <div class="badge">
+                ✦ GOLD PLUS ✦
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- HELDERBERG 2025 -->
+
+    <div class="achievement">
+
+        <div class="achievement-photo">
+
+            <img
+                src="images/helderberg-2025.jpeg"
+                alt="The Platinum Marimba Band at Helderberg Eisteddfod 2025"
+            >
+
+            <div class="year">
+                2025
+            </div>
+
+        </div>
+
+        <div>
+
+            <div class="small-title">
+                HELDERBERG EISTEDDFOD
+            </div>
+
+            <h3>
+                <span>Gold Plus</span> — again!
+            </h3>
+
+            <p>
+                Our 2025 result was also Gold Plus,
+                giving us back-to-back Gold Plus results
+                at the Helderberg Eisteddfod.
+            </p>
+
+            <div class="badge">
+                ✦ GOLD PLUS ✦
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- TYGERBERG 2026 -->
+
+    <div class="achievement">
+
+        <div class="achievement-photo">
+
+            <img
+                src="images/tygerberg.jpeg"
+                alt="The Platinum Marimba Band at Tygerberg Eisteddfod"
+            >
+
+            <div class="year">
+                2026
+            </div>
+
+        </div>
+
+        <div>
+
+            <div class="small-title">
+                TYGERBERG EISTEDDFOD
+            </div>
+
+            <h3>
+                <span>Cum Laude</span> • 92%
+            </h3>
+
+            <p>
+                In 2026, we achieved Cum Laude with
+                an impressive score of 92%.
+            </p>
+
+            <div class="badge">
+                92% · CUM LAUDE
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- TYGERBERG 2025 -->
+
+    <div class="achievement">
+
+        <div class="achievement-photo">
+
+            <img
+                src="images/beginning-year-shoot.jpg"
+                alt="The Platinum Marimba Band beginning of year photoshoot"
+            >
+
+            <div class="year">
+                2025
+            </div>
+
+        </div>
+
+        <div>
+
+            <div class="small-title">
+                TYGERBERG EISTEDDFOD
+            </div>
+
+            <h3>
+                <span>Cum Laude</span> • 90%
+            </h3>
+
+            <p>
+                We first reached Cum Laude at Tygerberg
+                in 2025, achieving a score of 90%.
+            </p>
+
+            <div class="badge">
+                90% · CUM LAUDE
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- GUINNESS -->
+
+    <div class="achievement">
+
+        <div class="achievement-photo">
+
+            <img
+                src="images/guinness.jpeg"
+                alt="The Platinum Marimba Band at the Guinness World Record event"
+            >
+
+            <div class="year">
+                2025
+            </div>
+
+        </div>
+
+        <div>
+
+            <div class="small-title">
+                GUINNESS WORLD RECORD
+            </div>
+
+            <h3>
+                We made <span>history.</span>
+            </h3>
+
+            <p>
+                In 2025, we were part of the largest marimba
+                ensemble in the world, helping break a
+                Guinness World Record.
+            </p>
+
+            <div class="badge">
+                ♡ WORLD RECORD ♡
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- KONSERVE -->
+
+    <div class="achievement">
+
+        <div class="achievement-photo">
+
+            <img
+                src="images/doublegold.jpeg"
+                alt="The Platinum Marimba Band celebrating Double Gold at Konserve Eisteddfod"
+            >
+
+            <div class="year">
+                2026
+            </div>
+
+        </div>
+
+        <div>
+
+            <div class="small-title">
+                KONSERVE EISTEDDFOD
+            </div>
+
+            <h3>
+                <span>Double Gold</span> • 95%
+            </h3>
+
+            <p>
+                At the 2026 Konserve Eisteddfod,
+                we achieved Double Gold with an
+                outstanding score of 95%.
+            </p>
+
+            <div class="badge">
+                95% · DOUBLE GOLD
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     KONSERVE VIDEO
+     BORDERLESS VERSION
+========================================= -->
+
+<section class="video-section">
+
+    <div>
+
+        <div class="small-title">
+            KONSERVE EISTEDDFOD
+        </div>
+
+        <h2>
+            95% looks a little<br>
+            <span>like this.</span>
+        </h2>
+
+        <p>
+            A clip from our Konserve performance.
+        </p>
+
+    </div>
+
+
+    <div class="konserve-video-box">
+
+        <video
+            controls
+            playsinline
+            preload="metadata"
+        >
+
+            <source
+                src="images/konserve.mp4"
+                type="video/mp4"
+            >
+
+            Your browser does not support HTML5 video.
+
+        </video>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     MEET THE PLATINUMS
+========================================= -->
+
+<section class="platinums" id="platinums">
+
+    <div class="section-title">
+
+        <small>THE GIRLS BEHIND THE MALLETS ♡</small>
+
+        <h2>
+            Meet the <span>Platinums.</span>
+        </h2>
+
+        <p>
+            Five very different personalities.
+            One very big love for music.
+        </p>
+
+    </div>
+
+
+    <div class="members">
+
+
+        <!-- AYLA -->
+
+        <div class="member">
+
+            <img
+                src="images/ayla.jpeg"
+                alt="Ayla Daniel-Ramouthar"
+            >
+
+            <div class="member-info">
+
+                <div class="member-number">
+                    PLATINUM 01
+                </div>
+
+                <h3>
+                    Ayla Daniel-Ramouthar
+                </h3>
+
+                <p>
+                    Bio coming soon ♡
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- KIARA -->
+
+        <div class="member">
+
+            <img
+                src="images/kiara.jpeg"
+                alt="Kiara Lovett"
+            >
+
+            <div class="member-info">
+
+                <div class="member-number">
+                    PLATINUM 02
+                </div>
+
+                <h3>
+                    Kiara Lovett
+                </h3>
+
+                <p>
+                    I love playing marimba because it’s really fun
+                    and different from other instruments. I like how
+                    everyone has to work together to make the music
+                    sound good, and it’s always satisfying when we
+                    finally get a song right. I also love the sound
+                    of the marimba and how energetic the music can be.
+                    It’s something I genuinely enjoy doing, especially
+                    when I’m playing with other people.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MIA -->
+
+        <div class="member">
+
+            <img
+                src="images/mia.jpeg"
+                alt="Mia van Tubbergh"
+            >
+
+            <div class="member-info">
+
+                <div class="member-number">
+                    PLATINUM 03
+                </div>
+
+                <h3>
+                    Mia van Tubbergh
+                </h3>
+
+                <p>
+                    I love marimba and music because it allows me
+                    to express myself while having fun with others.
+                    I love the energy and unique sound of the marimba,
+                    and how everyone has to work together to create
+                    something amazing. There’s nothing better than
+                    finally getting a song right after practising
+                    together.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- OLIVIA -->
+
+        <div class="member">
+
+            <img
+                src="images/olivia.jpeg"
+                alt="Olivia Bain"
+            >
+
+            <div class="member-info">
+
+                <div class="member-number">
+                    PLATINUM 04
+                </div>
+
+                <h3>
+                    Olivia Bain
+                </h3>
+
+                <p>
+                    I love marimba because it really brings our band
+                    together in a strong bond. The musicality, rhythm
+                    and songs we share and love together is truly
+                    special to me. Marimba is our escape from the
+                    stress at school, home and just anything —
+                    marimba always makes us smile at the end of the day.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SITARA -->
+
+        <div class="member">
+
+            <img
+                src="images/sitara.jpeg"
+                alt="Sitara Pillay"
+            >
+
+            <div class="member-info">
+
+                <div class="member-number">
+                    PLATINUM 05
+                </div>
+
+                <h3>
+                    Sitara Pillay
+                </h3>
+
+                <p>
+                    I love marimba because, although I have experienced
+                    different instruments, genres and ensembles, there
+                    is something about marimba that feels completely
+                    different. It is more than just an instrument; it
+                    is an entire experience. Creating something together
+                    with people you care about is incredibly special.
+                    Platinum Marimba has given me friendships, memories
+                    and a sense of belonging that I will carry with me
+                    for a very long time.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     MEET THE TEACHER
+========================================= -->
+
+<section class="teacher" id="teacher">
+
+    <div>
+
+        <img
+            src="images/renee.jpeg"
+            alt="Renee van den Berg"
+        >
+
+    </div>
+
+
+    <div>
+
+        <div class="small-title">
+            THE ONE WHO KEEPS US TOGETHER ♡
+        </div>
+
+        <h2>
+            Meet our<br>
+            <span>teacher.</span>
+        </h2>
+
+        <h3>
+            Renee van den Berg
+        </h3>
+
+        <p>
+            Behind every great ensemble is someone who knows
+            when to push, when to listen and when to tell us
+            to practise that section one more time.
+        </p>
+
+        <div class="teacher-bio">
+
+            <div class="small-title">
+                RENEE'S STORY
+            </div>
+
+            <p>
+                Renee's bio is coming soon ♡
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     PHOTO GALLERY
+========================================= -->
+
+<section class="gallery" id="gallery">
+
+    <div class="section-title">
+
+        <small>FROM SOMERSET WEST & BEYOND ✦</small>
+
+        <h2>
+            Our little <span>photo album.</span>
+        </h2>
+
+        <p>
+            Some of our favourite moments together.
+        </p>
+
+    </div>
+
+
+    <div class="photo-grid">
+
+        <img
+            src="images/beginning-year-shoot.jpg"
+            alt="The Platinum Marimba Band beginning of year photoshoot"
+        >
+
+        <img
+            src="images/threepics.jpeg"
+            alt="The Platinum Marimba Band"
+        >
+
+        <img
+            src="images/helderberg-2026.jpg"
+            alt="The Platinum Marimba Band at Helderberg Eisteddfod 2026"
+        >
+
+        <img
+            src="images/helderberg-2025.jpeg"
+            alt="The Platinum Marimba Band at Helderberg Eisteddfod 2025"
+        >
+
+        <img
+            src="images/tygerberg.jpeg"
+            alt="The Platinum Marimba Band at Tygerberg Eisteddfod"
+        >
+
+        <img
+            src="images/guinness.jpeg"
+            alt="The Platinum Marimba Band at the Guinness World Record event"
+        >
+
+        <img
+            src="images/doublegold.jpeg"
+            alt="The Platinum Marimba Band celebrating Double Gold"
+        >
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     CONTACT
+========================================= -->
+
+<section class="contact" id="contact">
+
+    <div class="small-title">
+        LET'S MAKE SOME NOISE ♡
+    </div>
+
+    <h2>
+        Want us at your<br>
+        <span>next event?</span>
+    </h2>
+
+    <p>
+        We're looking to broaden our reach and share
+        our love for music with more people.
+
+        We'd love to hear from you about performances,
+        community events and opportunities to play.
+    </p>
+
+
+    <a
+        href="mailto:miavantubbergh123@gmail.com"
+        class="button"
+    >
+        Get in touch ♡
+    </a>
+
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <strong>
+        THE <span>PLATINUMS</span> ♡
+    </strong>
+
+    <p>
+        Curro Somerset West · Sitari Estate · South Africa
+    </p>
+
+    <p>
+        Made with music, friendship & a suspicious number of mallets. ✦
+    </p>
+
+</footer>
+
+
+</body>
+</html>
